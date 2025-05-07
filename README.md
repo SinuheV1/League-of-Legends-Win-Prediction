@@ -1,1 +1,1 @@
-# League-of-Legends-Ranked-Win-Probability
+# League-of-Legends-Win-Prediction
