@@ -49,7 +49,7 @@ class LoLMatchProcessor:
         for i, puuid in enumerate(puuids):
             print(f"Fetching matches for PUUID {i+1}/{len(puuids)}")
 
-            url = f"https://{region}.api.riotgames.com/lol/match/v5/matches/by-puuid/{puuid}/ids?queue=420&start=0&count=50"
+            url = f"https://{region}.api.riotgames.com/lol/match/v5/matches/by-puuid/{puuid}/ids?queue=420&start=0&count=100"
 
             for attempt in range(max_retries):
                 resp = requests.get(url, headers=self.headers)
